@@ -5,7 +5,6 @@ from app.auth.router import router as auth_router
 from app.config import client, env, fastapi_config
 from app.shanyraks.router import router as shanyrak_router
 
-
 app = FastAPI(**fastapi_config)
 
 

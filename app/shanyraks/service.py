@@ -1,8 +1,5 @@
-from pydantic import BaseSettings
-
 from app.config import database
 
-from .adapters.jwt_service import JwtService
 from .repository.repository import ShanyrakRepository
 
 
@@ -16,5 +13,4 @@ class Service:
 
 def get_service():
     repository = ShanyrakRepository(database)
-
     return Service(repository)
